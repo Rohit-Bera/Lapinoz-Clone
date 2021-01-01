@@ -1,0 +1,552 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    position: fixed;
+    border-bottom: 1px solid whitesmoke;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 20px 8px #a4b0be;
+    width: 100%;
+    z-index: 2;
+}
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.head img {
+    height: 3.5rem;
+    width: 10rem;
+    padding: 10px 200px 10px 230px;
+}
+
+.head p {
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.head i{
+    font-weight: lighter;
+}
+
+/* Center - styling*/
+.center-middle{
+    background-color: #185727;
+}
+
+/* Animation styling*/
+#slider {
+    overflow: hidden;
+    z-index: 0;
+    padding-top: 30px;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    animation-name: slider;
+    animation-duration: 13.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    100% {
+        left: -300%;
+    }
+}
+
+/* About - Styling*/
+.about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: white;
+}
+.about .line1{
+    display: flex;
+    align-items: center;
+    font-size: 38px;
+    color: #057229;
+}
+.about .section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+    color: rgb(99, 96, 96);
+    
+}
+
+.about .line2{
+    border: 1px solid #057229;
+    background-color:  #057229;
+    border-radius: 25px;
+    padding: 10px 30px 10px 30px;
+    color: whitesmoke;
+    transition: 0.3s ease-in;
+}
+
+.about .line2:hover{
+    border: 1px solid #057229;
+    background-color:white;
+    color: #057229;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+/*Menu - section*/
+.menu{
+    background: url(https://lapinozpizza.in/assets/wla_new/lapinoz/img/amazing-offers-bg.jpg) no-repeat center;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.menu .heading{
+    text-transform: uppercase;
+    justify-content: center;
+    margin-left: 90px;
+}
+.menu h3{
+    
+    font-size: 17px;
+    color: darkslategrey;
+}
+.menu h4{
+    font-size: 30px;
+    color: rgb(11, 80, 11);
+}
+.card1{
+    display: flex;
+    position: relative;
+    padding-left: 230px;
+    justify-content: space-between;
+    padding-right: 230px;
+}
+.card1 .line {
+    display: flex;
+    height: 160px;
+    width: 240px;
+    background-color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 11px;
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px #a4b0be;
+}
+.card1 .line .section img{
+    vertical-align: middle;
+    height: 70px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-left: 82px;
+    padding-top: 23px;
+}
+.card1 .line .section h4{
+    font-size: 20px;
+    color: black;
+    padding-left: 80px;
+}
+
+.card2{
+    display: flex;
+    position: relative;
+    padding-left: 370px;
+    justify-content: space-between;
+    padding-right: 370px;
+    padding-top: 30px;
+    box-shadow: 5px rgb(107, 106, 106);   
+}
+.card2 .line2 {
+    
+    display: flex;
+    height: 160px;
+    width: 240px;
+    background-color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 11px;
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px #a4b0be;
+}
+.card2 .line2 .section2 img{
+    vertical-align: middle;
+    height: 70px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-left: 82px;
+    padding-top: 23px;
+}
+.card2 .line2 .section2 h4{
+    font-size: 20px;
+    color: black;
+    padding-left: 80px;
+}
+/*chat-section*/
+/* Slider - section*/
+.chat-section{
+    background: url(https://lapinozpizza.in/assets/wla_new/lapinoz/img/testimonial-bg.jpg) no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+.chat-section .heading{
+    text-transform: uppercase;
+    margin-left: 80px;
+}
+.chat-section h3{ 
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(100, 99, 99);
+}
+.chat-section h4{
+    font-size: 30px;
+    color: rgb(11, 80, 11);
+}
+
+.flexy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card {
+    height: 310px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.card .section {
+    padding-top: 15px;
+    padding-bottom: 10px;
+            
+}
+
+.card .section .image img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 135px;
+    width: 140px;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 5px rgb(221, 218, 218);
+}
+
+.section .comment p{
+    font-size: 18px;
+    color:rgb(100, 99, 99);
+    text-align: center;
+}
+.section .comment .p2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.section .comment img{
+    height: 60px;
+    width: 40px;
+    display: flex;
+    justify-content: left;
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    margin-top: 90px;
+}
+.dots label{
+    height: 12px;
+    width: 12px;
+    border: 3px solid rgb(0, 104, 0);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+
+.dots label:hover{
+    background-color: rgb(0, 104, 0);
+}
+
+#img1:checked ~ .m1{
+    margin-left: 0;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+#img3:checked ~ .m3{
+    margin-left: -200%;
+}
+
+/*location styling*/
+.location{
+    text-align: center;
+    
+}
+.location p{
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+.location span{
+    font-weight: bolder;
+}
+.location ul{
+    display: flex;
+    margin-left: 30px;
+    flex-wrap: wrap;
+}
+.location li{
+    text-align: left;
+    font-size: 16px;
+    margin-right: 12px;
+    background: rgb(255,255,255);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px 9px 7px 9px;
+    color: white;
+    cursor: pointer;
+    
+}
+.location i{
+    padding-right: 20px;
+}
+
+/*Download-App Section*/
+.footer1{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 120px;
+    z-index: 1;
+}
+.heading{
+    
+    text-transform: capitalize;
+    z-index: 1;
+    margin-right: 60px;
+    margin-left: 250px;
+    padding: 10px 50px 30px 30px;
+}
+.heading .p1{
+    font-size: 30px;
+    color: #057229;
+}
+.heading span{
+    font-weight: bold;
+    color: #185727; 
+}
+.heading .p2{
+    font-size: 14px;
+}
+.download-image img{
+    height: 50px;
+    width: 160px;
+}
+
+.footer1 #slider2{
+    overflow: hidden;
+    z-index: 0;
+    
+}
+.footer1 #slider2 figure{
+    display: flex;
+    position: relative;
+    width: 80%;
+    left: 0;
+    margin: 0;
+    animation-name: slider2;
+    animation-duration: 13.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    
+}
+
+.footer1 #slider2 figure img {
+    height: 440px;
+    width: 200px;
+    float: left;
+    margin-right: 50px;
+}
+
+@keyframes slider2 {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -33%;
+    }
+
+    45% {
+        left: -33%;
+    }
+
+    50% {
+        left: -63%;
+    }
+
+    70% {
+        left: -63%;
+    }
+
+    75% {
+        left: -93%;
+    }
+
+    95% {
+        left: -93%;
+    }
+
+    100%{
+        left: -123%;
+    }
+    120%{
+        left: -123%;
+    }
+    
+}
+
+.blanksection{
+    z-index: 1;
+    padding-right: 255px;
+}
+
+/*footer 2 usefull links*/
+.footer2{
+    background-color: #185727;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border-bottom: 2px solid white;
+}
+.usefullinks{
+    margin-left: 180px;
+    color: #a4b0be;
+    margin-top: 40px;
+    text-transform: capitalize;
+   
+}.usefullinks li{
+    margin-bottom: 20px;
+}
+.usefullinks .list1{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+}
+.payment{
+    font-size: 20px;
+    margin-bottom: 70px;
+    color: white;
+    margin-left: 250px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.payment img{
+    text-align: left;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.payment ul{
+    display: flex;
+}
+.connect-icon{
+    margin-left: 150px;
+    color: white;;
+}
+.connect-icon .list2{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.connect-icon li{
+    margin-bottom: 20px;
+}
+.connect-icon i{
+    padding-right: 10px;
+}
+.connect-icon i:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s all;
+}
+.connect-icon #set1{
+    border: 3px solid white;
+    border-radius: 100%;
+    padding: 15px 19px 15px 19px;
+    margin-right: 10px;
+    
+}
+
+.connect-icon #set2{
+    border: 3px solid white;
+    border-radius: 100%;
+    padding: 15px 17px 15px 17px;
+    margin-right: 10px;
+    
+}
